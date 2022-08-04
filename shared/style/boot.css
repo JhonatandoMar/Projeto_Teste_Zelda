@@ -89,14 +89,14 @@ img a {
 }
 
 a{text-decoration: none;font-weight: 700;color: var(--blue);}
-a:hover{color: var(--blue_h);}
+a:hover{color: var(--white);}
 
 ul {
     list-style: none;
 }
 
 p {
-    margin: 20px 0 0 0;
+    margin: 0px;
 }
 
 embed,
