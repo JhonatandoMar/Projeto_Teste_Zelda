@@ -11,6 +11,10 @@
   src: url("../font/font_Corpo/PlayfairRomanVF.ttf") format("truetype");
 }
 @font-face {
+  font-family: "PlayfairItalicVF";
+  src: url("../font/font_Corpo/PlayfairItalicVF.ttf") format("truetype");
+}
+@font-face {
   font-family: "Pixel Sans Serif";
   src: url("../font/font_Rodape/Pixel\ Sans\ Serif.ttf") format("truetype");
 }
@@ -18,7 +22,8 @@
 :root {
   --font-padrao: Arial, Helvetica, sans-serif;
   --font-site: "Ubuntu", sans-serif;
-  --font-corpo: "PlayfairRomanVF", serif;
+  --font-corpo01: "PlayfairRomanVF", serif;
+  --font-corpo02: "PlayfairItalicVF", serif;
   --font-rodape: "Pixel Sans Serif", serif;
   --font-trilinks: "Triforce", serif;
 
@@ -75,7 +80,7 @@ a {
   position: absolute;
   width: 200px;
   height: 77px;
-  background: url("../img/Logo_LegendofZelda.png") center center no-repeat;
+  background: url("../img/Icone-Link-002.png") center center no-repeat;
   background-size: auto 76%;
   z-index: 3;
 }
@@ -109,7 +114,7 @@ nav > a:hover {
 .header_login a {
   position: relative;
   left: 50px;
-  
+
   margin: 0px 5px;
   padding: 6px 10px;
 
@@ -130,7 +135,7 @@ nav > a:hover {
 
 .home_featured {
   position: relative;
-  background: #00000054;
+  background: #0000008c;
   color: var(--cor02);
 }
 
@@ -142,8 +147,7 @@ nav > a:hover {
   right: 0px;
   position: absolute;
   z-index: var(--index-back);
-  background: url("../img/imagem_fundo008.jpg") center center
-    no-repeat;
+  background: url("../img/imagem_fundo009.jpg") top center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -162,7 +166,7 @@ nav > a:hover {
   font-weight: normal;
   line-height: 91px;
 
-  color: #D19D34;
+  color: var(--cor03);
   text-shadow: 0px 4px 4px #00000040;
 }
 
@@ -183,13 +187,13 @@ nav > a:hover {
 
 .home_featured_content a {
   box-sizing: border-box;
-  
+
   position: relative;
   /* width: 317px;
   height: 52px; */
   left: 460px;
   top: 100px;
-  
+
   padding: 10px;
 
   border: 2px solid #a5833099;
@@ -200,31 +204,148 @@ nav > a:hover {
 /* CORPO */
 /* MAIN_SECTION */
 .main_section {
-  background: url('../img/Imagens-Fundo-001.jpg') center center no-repeat;
+  background: url("../img/Imagens-Fundo-001.jpg") center center no-repeat;
   background-size: cover;
 }
 
 /* MAIN_SECTION_ARTICLE_TOP */
+/* .main_section_article_top {
+  height: 700px;
+} */
+
 .main_section_article_top h1 {
   position: relative;
-  width: 178px;
+  width: 250px;
   height: 53px;
-  left: 1015px;
-  top: 200px;
+  left: 929px;
+  top: 150px;
+
+  color: #f2f2f2;
+  font-family: var(--font-corpo01);
+  font-size: 2em;
 }
 
 .main_section_article_top p {
   position: relative;
-  width: 471px;
-  height: 174px;
-  left: 760px;
-  top: 207px;
+  width: 432px;
+  height: 0px;
+  left: 733px;
+  top: 148px;
+
+  color: #f2f2f2;
+  font-family: var(--font-corpo01);
+  font-size: 1.5em;
+  text-align: justify;
 }
 
 .main_section_article_top img {
   position: relative;
-  width: 797px;
-  height: 786px;
-  left: 0px;
-  top: -345px;
+  width: 727px;
+  height: 736px;
+  left: 45px;
+  top: -150px;
 }
+
+/* MAIN_SECTION_ARTICLE_BOTTOM */
+.main_section_article_bottom h1 {
+  position: relative;
+  width: 530px;
+  height: 0px;
+  left: 65px;
+  top: 220px;
+
+  color: #f2f2f2;
+  font-family: var(--font-corpo01);
+  font-size: 2em;
+}
+
+.main_section_article_bottom p {
+  position: relative;
+  width: 530px;
+  height: 0px;
+  left: 65px;
+  top: 272px;
+
+  color: #f2f2f2;
+  font-family: var(--font-corpo01);
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.main_section_article_bottom img {
+  position: relative;
+  width: 602px;
+  height: 614px;
+  left: 586px;
+  top: -35px;
+}
+
+/* MAIN_SECTION_ASIDE */
+.main_section_aside {
+  position: relative;
+  padding: 50px 0px 500px;
+}
+
+.main_section_aside::before {
+  content: "";
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
+  background: url("../img/imagem_fundo007-01.png") top center no-repeat;
+  background-size: cover;
+}
+
+.main_section_aside_h1 {
+  position: relative;
+  padding: 10px 0px 50px;
+  font-family: var(--font-corpo01);
+  font-size: 3em;
+  text-align: center;
+  color: #000;
+}
+
+.roupas_aside {
+  position: absolute;
+  left: 0px;
+  width: 33%;
+  height: 53%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/Roupas-The-Legend-of-Zelda-001.png");
+}
+
+.livro_aside {
+  position: absolute;
+  left: 412px;
+  width: 36%;
+  height: 53%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/Livro-The-Legend-of-Zelda-001.png");
+}
+
+.action_figure_aside {
+  position: absolute;
+  left: 861px;
+  width: 31%;
+  height: 53%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/Action-Figure-The-Legend-of-Zelda-001.png");
+}
+
+/*
+.main_section_aside img {
+  width: 400px;
+}
+
+.main_section_aside_img {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+} */
