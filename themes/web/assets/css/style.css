@@ -29,7 +29,8 @@
 
   --cor01: #000;
   --cor02: #fff;
-  --cor03: #d19d34;
+  --cor03: #f2f2f2;
+  --cor04: #d19d34;
 }
 
 * {
@@ -51,8 +52,8 @@ a {
 /* HEADER-LOGO */
 #header_cabecalho {
   background-color: #121212;
-  padding-top: 32px;
-  height: 85px;
+  padding-top: 29px;
+  height: 90px;
   left: 0px;
   top: 0px;
   z-index: 99;
@@ -80,14 +81,14 @@ a {
   position: absolute;
   width: 200px;
   height: 77px;
-  background: url("../img/Icone-Link-002.png") center center no-repeat;
+  background: url("../img/Icone-Link-002.png") top center no-repeat;
   background-size: auto 76%;
   z-index: 3;
 }
 
 /* HEADER-MENU */
 .header_menu a {
-  margin: 10px 10px;
+  margin-right: 20px;
   padding: 5px 5px;
 
   position: relative;
@@ -96,6 +97,19 @@ a {
   font-family: var(--font-rodape);
   font-weight: normal;
   font-size: 0.7em;
+}
+
+/* HEADER-MENU-NAV */
+.header_menu_nav {
+  display: flex;
+  align-items: center;
+}
+
+.header_menu_nav img {
+  /* height: 28px;
+  width: 28px; */
+  position: absolute;
+  margin-right: 5px;
 }
 
 nav > a {
@@ -166,7 +180,7 @@ nav > a:hover {
   font-weight: normal;
   line-height: 91px;
 
-  color: var(--cor03);
+  color: var(--cor04);
   text-shadow: 0px 4px 4px #00000040;
 }
 
@@ -220,7 +234,7 @@ nav > a:hover {
   left: 929px;
   top: 150px;
 
-  color: #f2f2f2;
+  color: var(--cor03);
   font-family: var(--font-corpo01);
   font-size: 2em;
 }
@@ -232,7 +246,7 @@ nav > a:hover {
   left: 733px;
   top: 148px;
 
-  color: #f2f2f2;
+  color: var(--cor03);
   font-family: var(--font-corpo01);
   font-size: 1.5em;
   text-align: justify;
@@ -254,7 +268,7 @@ nav > a:hover {
   left: 65px;
   top: 220px;
 
-  color: #f2f2f2;
+  color: var(--cor03);
   font-family: var(--font-corpo01);
   font-size: 2em;
 }
@@ -266,7 +280,7 @@ nav > a:hover {
   left: 65px;
   top: 272px;
 
-  color: #f2f2f2;
+  color: var(--cor03);
   font-family: var(--font-corpo01);
   font-size: 1.5em;
   text-align: justify;
@@ -303,7 +317,7 @@ nav > a:hover {
   font-family: var(--font-corpo01);
   font-size: 3em;
   text-align: center;
-  color: #000;
+  color: var(--cor01);
 }
 
 .roupas_aside {
